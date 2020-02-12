@@ -15,8 +15,6 @@ responses = {
 }
 
 def respond(message):
-    if message.endswith('?'):
-
     if message in responses:
         return random.choice(responses[message])
     else:
